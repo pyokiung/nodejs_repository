@@ -15,6 +15,7 @@ var req_send_certmail = require('./routes/req_send_certmail');
 var update_cert =require('./routes/update_cert');
 var token=require('./models/token');
 var auth=require('./models/auth');
+
 // DB 연결 모듈
 var mongoose    = require('mongoose');
 mongoose.Promise = global.Promise;      /* node generator 생성기*/
@@ -78,7 +79,7 @@ app.use(function(err, req, res, next) {
     //res.render('error');
 });
 
-app.listen(3000,function () {
+app.listen(54215,function () {
     console.log('server on! ');
 });
 

@@ -35,7 +35,7 @@ router.post('/', function(req, res){
      });
      //token 생성
      */
-
+    /*
     //collections 1
     var member_data = new users();
     // 전달받은 req객체에서 데이터 추출
@@ -47,23 +47,24 @@ router.post('/', function(req, res){
     //users informations
     console.log(member_data);
     //test
-
+*/
 
     console.log("------------")
     //collections 2
-    var tokens_data=new token_users();
+ /*   var tokens_data=new token_users();
     tokens_data.id=recv_data.id;
     tokens_data.pw=recv_data.pw;
     var tokens=auth.signToken(recv_data.id); //token키 발급
     tokens_data.token=tokens;
     // users token informations
-
+*/
     console.log(tokens_data);
     //test
-
+/*
     // 콜렉션에 다큐먼트 저장
     member_data.save();
     tokens_data.save();
+  */
     send_cert_mail(recv_data.cert_email, recv_data.id);
     res.end("register success");
 });
